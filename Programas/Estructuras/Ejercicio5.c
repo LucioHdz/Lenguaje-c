@@ -1,39 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Empleado{
-  char nombre[100];
-  char sexo[];
-  int sueldo;
+struct Atleta{
+  char deporte[100];
+  char nombre[50];
+  char pais[50];
+  int medallas;
+  double precio;
 };
 
 int main() {
-  puts("******************");
-  puts("*                *");
-  puts("*    DATACIC     *");
-  puts("*                *");
-  puts("******************");
-  struct Empleado emp[5];
-  int menor=0;
+  struct Atleta atleta[10];
+  int mayor=0;
+  for (int i = 0; i < 10; i++) {
+    printf("Ingresa el deporte:\n");
+    scanf("%s\n",atleta[i].deporte);
 
-  for (int i = 0; i < 5; i++) {
-    printf("Ingresa el nombre del trabajador:\n" );
-    scanf("%s\n",emp1.nombre );
+    printf("Ingresa el nombre del atleta:\n");
+    scanf("%s\n",atleta[i].nombre );
 
-    printf("Ingresa el sexo del trabajador:\n" );
-    scanf("%s\n",emp1.sexo );
+    printf("Ingresa el pais:\n");
+    scanf("%d\n",atleta[i].pais);
 
-    printf("Ingresa el sueldo a ganar de %s:\n",emp1.nombre);
-    scanf("%d\n", emp1.sueldo);
-    if (i<10 && i>0 && amp[i].sueldo<emp[i-1].sueldo){
-      menor=i;
+    printf("Ingresa el total de medallas ganadas:\n", );
+    scanf("%d\n",&atleta[i].medallas );
+
+    if (i<10 && i>0 && atleta[i].medallas>atleta[i-1].medallas){
+      mayor=i;
     }
-  }
-  printf("La persona con menor sueldo es: %s\n",emp[menor].sueldo );
 
-  printf("Nombre: %s\n",emp[menor].nombre );
-  printf("Sexo: %s\n",emp[menor].sexo );
-  printf("Sueldo %f\n",emp[menor].sueldo );
+    printf("Ingresa el precio del atleta: \n", );
+    scanf("%f\n",atleta[i].precio);
+  }
+  printf("El que tiene mas medallas es: %s\n",atleta[mayor].nombre );
+
+  printf("Deporte =>\t%s\n",atleta[mayor].deporte );
+  printf("Nombre =>\t%s\n",atleta[mayor].nombre );
+  printf("Pais =>\t%d\n",atleta[mayor].pais );
+  printf("medallas =>\t%d\n",atleta[mayor].medallas );
+  printf("precio =>\t$%f\n",atleta[mayor].precio );
 
   return 0;
 }
