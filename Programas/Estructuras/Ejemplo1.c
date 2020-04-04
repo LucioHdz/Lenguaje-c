@@ -6,12 +6,11 @@ struct CD{
   char artista[50];
 };
 
-int main() {
+int main(void){
   struct CD cd1;
   printf("Ingresa el titulo:\n");
-  scanf("%s\n",cd1.titulo);
+  scanf("%s",cd1.titulo);
 
-  printf("%s\n",cd1.titulo );
-
+  printf("Titulo => %s",cd1.titulo);
   return 0;
 }

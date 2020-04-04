@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct atomo{
   int hidrogeno;
@@ -11,7 +12,7 @@ int main (){
   struct atomo agua[4];
   agua[0].hidrogeno = 2;
   agua[0].oxigeno = 1;
-  gets (agua[0].nombre);
+  scanf("%s",agua[0].nombre);
   printf ("%s", agua[0].nombre);
   return 0;
 }

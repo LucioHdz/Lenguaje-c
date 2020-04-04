@@ -6,6 +6,13 @@ struct fraccion{
   int num;
 };
 
+int multipli (struct fraccion mul1,struct fraccion mul2){
+int den = mul1.den * mul2.den;
+int nom = mul1.num * mul2.num;
+printf("%d / %d" ,den, nom);
+return 0;
+}
+
 int main(void){
   struct fraccion frac1;
   struct fraccion frac2;

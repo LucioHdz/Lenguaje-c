@@ -14,14 +14,14 @@ int main() {
   struct Fraccion f2;
 
   printf("Ingrese el numerador de la primer fraccion:\n" );
-  scanf("%d\n",&f1.a );
+  scanf("%d",&f1.a );
   printf("Ingrese el denominador de la primer fraccion:\n" );
-  scanf("%d\n",&f1.b );
+  scanf("%d",&f1.b );
 
   printf("Ingrese el numerador de la segunda fraccion:\n" );
-  scanf("%d\n",&f2.a );
+  scanf("%d",&f2.a );
   printf("Ingrese el denominador de la segunda fraccion:\n" );
-  scanf("%d\n",&f2.b );
+  scanf("%d",&f2.b );
 
   printf("El resultado de la suma de las dos fracciones es: %f\n",suma(f1,f2) );
   printf("El resultado de la resta de las dos fracciones es: %f\n",resta(f1,f2) );

@@ -3,7 +3,7 @@
 
 struct Empleado{
   char nombre[100];
-  char sexo[];
+  char sexo[3];
   int sueldo;
 };
 
@@ -16,13 +16,13 @@ int main() {
   struct Empleado emp1;
 
   printf("Ingresa el nombre del trabajador:\n" );
-  scanf("%s\n",emp1.nombre );
+  scanf("%s",&emp1.nombre );
 
-  printf("Ingresa el sexo del trabajador:\n" );
-  scanf("%s\n",emp1.sexo );
+  printf("Ingresa el sexo del trabajador: (M/H)\n" );
+  scanf("%s",&emp1.sexo );
 
   printf("Ingresa el sueldo a ganar de %s:\n",emp1.nombre);
-  scanf("%d\n", emp1.sueldo);
+  scanf("%d", &emp1.sueldo);
 
   printf("Nombre: %s\n",emp1.nombre );
   printf("Sexo: %s\n",emp1.sexo );
