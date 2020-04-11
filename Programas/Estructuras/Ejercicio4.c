@@ -16,7 +16,7 @@ int main() {
   struct Empleado emp[5];
   int menor=0;
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 2; i++) {
     printf("Ingresa el nombre del trabajador:\n" );
     scanf("%s",&emp[i].nombre );
 

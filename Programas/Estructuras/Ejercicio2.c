@@ -26,7 +26,7 @@ int main() {
 
   printf("Nombre: %s\n",emp1.nombre );
   printf("Sexo: %s\n",emp1.sexo );
-  printf("Sueldo %f\n",emp1.sueldo );
+  printf("Sueldo %d\n",emp1.sueldo );
 
   return 0;
 }

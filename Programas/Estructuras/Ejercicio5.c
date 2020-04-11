@@ -12,7 +12,7 @@ struct Atleta{
 int main() {
   struct Atleta atleta[10];
   int mayor=0;
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 2; i++) {
     printf("Ingresa el deporte:\n");
     scanf("%s",&atleta[i].deporte);
 

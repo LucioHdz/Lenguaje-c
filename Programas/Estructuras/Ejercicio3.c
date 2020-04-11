@@ -24,7 +24,7 @@ int main() {
 
   printf("Deporte =>\t%s\n",atleta1.deporte );
   printf("Nombre =>\t%s\n",atleta1.nombre );
-  printf("Pais =>\t%s\n",atleta1.pais );
+  printf("Pais =>\t\t%s\n",atleta1.pais );
   printf("medallas =>\t%d\n",atleta1.medallas );
   return 0;
 }
