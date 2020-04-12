@@ -6,7 +6,7 @@ int main(){
     char *pc = &c;
     char **ppc = &pc;
     char ***pppc = &ppc;
-    printf("%c",***pppc);
+    printf("%c\n",***pppc);
     ***pppc = 'm';
     printf("%c",***pppc);
     

@@ -10,7 +10,7 @@ int main(){
         printf("ingrese el valor numerico para el arreglo en la posición %d:",(i+1));
         scanf("%d",&array[i]);
     }
-    for (size_t i = 0; i < count; i++){
+    for (int i = 0; i < len; i++){
         printf("Arreglo [%d] ==>  %d\n",i+1,array[i]);
     }
     
